@@ -1,0 +1,548 @@
+{
+  "company": {
+    "name": "Acme Foods",
+    "products": [
+      "Acme Tofu",
+      "Acme Pasta",
+      "Raw materials",
+      "Sourcing",
+      "Production",
+      "Packaging",
+      "Delivery",
+      "Use",
+      "End of life",
+      "Land use"
+    ]
+  },
+  "dashboard": [
+    {
+      "id": 1,
+      "yearSelection": {
+        "year": 2023,
+        "tabs": [
+          {
+            "name": "Main Calculation",
+            "data": {
+              "product": {
+                "name": "Acme Pasta",
+                "year": 2023,
+                "carbonFootprint": {
+                  "value": 1.94,
+                  "unit": "KG CO₂ / KG",
+                  "stages": [
+                    {
+                      "name": "Cradle to gate",
+                      "value": 1.74,
+                      "unit": "KG CO₂ / KG",
+                      "percentage": 88
+                    },
+                    {
+                      "name": "Gate to grave",
+                      "value": 0.26,
+                      "unit": "KG CO₂ / KG",
+                      "percentage": 12
+                    },
+                    {
+                      "name": "Emissions",
+                      "value": 1745,
+                      "unit": "kg CO₂e"
+                    }
+                  ]
+                },
+                "metadata": {
+                  "type": "Main",
+                  "status": "Unlocked",
+                  "category": "Pasta",
+                  "createdOn": "13.10.2024",
+                  "lastEdited": "3 hours ago"
+                },
+                "actions": {
+                  "downloadReport": true,
+                  "verify": true,
+                  "publish": true
+                }
+              },
+              "tabsContent": [
+                {
+                  "name": "Breakdown",
+                  "sections": [
+                    {
+                      "name": "Raw materials",
+                      "percentage": 55,
+                      "partialFootprint": {
+                        "value": 0.87,
+                        "unit": "kg CO₂e / kg"
+                      },
+                      "emissions": {
+                        "value": 873,
+                        "unit": "kg CO₂e"
+                      },
+                      "mainSources": [
+                        {
+                          "source": "Wheat pasta",
+                          "value": 596
+                        },
+                        {
+                          "source": "Tomato crush",
+                          "value": 275
+                        }
+                      ],
+                      "categories": [
+                        {
+                          "name": "Cereals and their products",
+                          "value": 0.6,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 68.6
+                        },
+                        {
+                          "name": "Vegetables and their products",
+                          "value": 0.27,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 31.4
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Sourcing",
+                      "percentage": 19,
+                      "partialFootprint": {
+                        "value": 0.33,
+                        "unit": "kg CO₂e / kg"
+                      },
+                      "emissions": {
+                        "value": 333,
+                        "unit": "kg CO₂e"
+                      },
+                      "mainSources": [
+                        {
+                          "source": "Aircraft freight, global",
+                          "value": 292
+                        },
+                        {
+                          "source": "Delivery lorries (15 ton), Finland",
+                          "value": 37
+                        }
+                      ],
+                      "categories": [
+                        {
+                          "name": "Air transportation",
+                          "value": 0.29,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 89.8
+                        },
+                        {
+                          "name": "Road transportation",
+                          "value": 0.04,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 10.2,
+                          "subcategories": [
+                            {
+                              "name": "Delivery lorries (15 ton), Finland",
+                              "value": 0.04,
+                              "unit": "KG CO₂ / KG",
+                              "percentage": 88.0
+                            },
+                            {
+                              "name": "Road freight, global",
+                              "value": 0.01,
+                              "unit": "KG CO₂ / KG",
+                              "percentage": 10.0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Analytics",
+                  "available": true
+                },
+                {
+                  "name": "Compare",
+                  "available": true
+                },
+                {
+                  "name": "Tips & Suggestions",
+                  "available": true,
+                  "new": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "Test Scenario",
+            "data": {}
+          },
+          {
+            "name": "Second Scenario",
+            "data": {}
+          },
+          {
+            "name": "Third Scenario",
+            "data": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "yearSelection": {
+        "year": 2022,
+        "tabs": [
+          {
+            "mainCalculation": {
+              "product": {
+                "name": "Acme Pasta",
+                "year": 2023,
+                "carbonFootprint": {
+                  "value": 1.94,
+                  "unit": "KG CO₂ / KG",
+                  "stages": {
+                    "cradleToGate": {
+                      "value": 1.74,
+                      "unit": "KG CO₂ / KG",
+                      "percentage": 88
+                    },
+                    "gateToGrave": {
+                      "value": 0.26,
+                      "unit": "KG CO₂ / KG",
+                      "percentage": 12
+                    },
+                    "emissions": {
+                      "value": 1745,
+                      "unit": "kg CO₂e"
+                    }
+                  }
+                },
+                "metadata": {
+                  "type": "Main",
+                  "status": "Unlocked",
+                  "category": "Pasta",
+                  "createdOn": "13.10.2024",
+                  "lastEdited": "3 hours ago"
+                },
+                "actions": {
+                  "downloadReport": true,
+                  "verify": true,
+                  "publish": true
+                }
+              },
+              "tabsContent": [
+                {
+                  "name": "Breakdown",
+                  "sections": [
+                    {
+                      "name": "Raw materials",
+                      "percentage": 55,
+                      "partialFootprint": {
+                        "value": 0.87,
+                        "unit": "kg CO₂e / kg"
+                      },
+                      "emissions": {
+                        "value": 873,
+                        "unit": "kg CO₂e"
+                      },
+                      "mainSources": [
+                        {
+                          "source": "Wheat pasta",
+                          "value": 596
+                        },
+                        {
+                          "source": "Tomato crush",
+                          "value": 275
+                        }
+                      ],
+                      "categories": [
+                        {
+                          "name": "Cereals and their products",
+                          "value": 0.6,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 68.6
+                        },
+                        {
+                          "name": "Vegetables and their products",
+                          "value": 0.27,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 31.4
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Sourcing",
+                      "percentage": 19,
+                      "partialFootprint": {
+                        "value": 0.33,
+                        "unit": "kg CO₂e / kg"
+                      },
+                      "emissions": {
+                        "value": 333,
+                        "unit": "kg CO₂e"
+                      },
+                      "mainSources": [
+                        {
+                          "source": "Aircraft freight, global",
+                          "value": 292
+                        },
+                        {
+                          "source": "Delivery lorries (15 ton), Finland",
+                          "value": 37
+                        }
+                      ],
+                      "categories": [
+                        {
+                          "name": "Air transportation",
+                          "value": 0.29,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 89.8
+                        },
+                        {
+                          "name": "Road transportation",
+                          "value": 0.04,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 10.2,
+                          "subcategories": [
+                            {
+                              "name": "Delivery lorries (15 ton), Finland",
+                              "value": 0.04,
+                              "unit": "KG CO₂ / KG",
+                              "percentage": 88.0
+                            },
+                            {
+                              "name": "Road freight, global",
+                              "value": 0.01,
+                              "unit": "KG CO₂ / KG",
+                              "percentage": 10.0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Analytics",
+                  "available": true
+                },
+                {
+                  "name": "Compare",
+                  "available": true
+                },
+                {
+                  "name": "Tips & Suggestions",
+                  "available": true,
+                  "new": true
+                }
+              ]
+            },
+            "testScenario": {},
+            "secondScenario": {},
+            "thirdScenario": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "yearSelection": {
+        "year": 2021,
+        "tabs": [
+          {
+            "mainCalculation": {
+              "product": {
+                "name": "Acme Pasta",
+                "year": 2023,
+                "carbonFootprint": {
+                  "value": 1.94,
+                  "unit": "KG CO₂ / KG",
+                  "stages": {
+                    "cradleToGate": {
+                      "value": 1.74,
+                      "unit": "KG CO₂ / KG",
+                      "percentage": 88
+                    },
+                    "gateToGrave": {
+                      "value": 0.26,
+                      "unit": "KG CO₂ / KG",
+                      "percentage": 12
+                    },
+                    "emissions": {
+                      "value": 1745,
+                      "unit": "kg CO₂e"
+                    }
+                  }
+                },
+                "metadata": {
+                  "type": "Main",
+                  "status": "Unlocked",
+                  "category": "Pasta",
+                  "createdOn": "13.10.2024",
+                  "lastEdited": "3 hours ago"
+                },
+                "actions": {
+                  "downloadReport": true,
+                  "verify": true,
+                  "publish": true
+                }
+              },
+              "tabsContent": [
+                {
+                  "name": "Breakdown",
+                  "sections": [
+                    {
+                      "name": "Raw materials",
+                      "percentage": 55,
+                      "partialFootprint": {
+                        "value": 0.87,
+                        "unit": "kg CO₂e / kg"
+                      },
+                      "emissions": {
+                        "value": 873,
+                        "unit": "kg CO₂e"
+                      },
+                      "mainSources": [
+                        {
+                          "source": "Wheat pasta",
+                          "value": 596
+                        },
+                        {
+                          "source": "Tomato crush",
+                          "value": 275
+                        }
+                      ],
+                      "categories": [
+                        {
+                          "name": "Cereals and their products",
+                          "value": 0.6,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 68.6
+                        },
+                        {
+                          "name": "Vegetables and their products",
+                          "value": 0.27,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 31.4
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Sourcing",
+                      "percentage": 19,
+                      "partialFootprint": {
+                        "value": 0.33,
+                        "unit": "kg CO₂e / kg"
+                      },
+                      "emissions": {
+                        "value": 333,
+                        "unit": "kg CO₂e"
+                      },
+                      "mainSources": [
+                        {
+                          "source": "Aircraft freight, global",
+                          "value": 292
+                        },
+                        {
+                          "source": "Delivery lorries (15 ton), Finland",
+                          "value": 37
+                        }
+                      ],
+                      "categories": [
+                        {
+                          "name": "Air transportation",
+                          "value": 0.29,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 89.8
+                        },
+                        {
+                          "name": "Road transportation",
+                          "value": 0.04,
+                          "unit": "KG CO₂ / KG",
+                          "percentage": 10.2,
+                          "subcategories": [
+                            {
+                              "name": "Delivery lorries (15 ton), Finland",
+                              "value": 0.04,
+                              "unit": "KG CO₂ / KG",
+                              "percentage": 88.0
+                            },
+                            {
+                              "name": "Road freight, global",
+                              "value": 0.01,
+                              "unit": "KG CO₂ / KG",
+                              "percentage": 10.0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Analytics",
+                  "available": true
+                },
+                {
+                  "name": "Compare",
+                  "available": true
+                },
+                {
+                  "name": "Tips & Suggestions",
+                  "available": true,
+                  "new": true
+                }
+              ]
+            },
+            "testScenario": {},
+            "secondScenario": {},
+            "thirdScenario": {}
+          }
+        ]
+      }
+    }
+  ],
+  "sidebar": {
+    "favorites": ["Test scenario"],
+    "companies": ["Acme Foods", "Subsidiary", "Example"],
+    "menuItems": [
+      {
+        "name": "Overview",
+        "url": "/result"
+      },
+      {
+        "name": "All products",
+        "url": "/result"
+      },
+      {
+        "name": "All Companies",
+        "url": "/result"
+      },
+      {
+        "name": "Supply chain",
+        "url": "/result"
+      },
+      {
+        "name": "Favorites",
+        "url": "/result"
+      },
+      {
+        "name": "Products",
+        "url": "/result"
+      },
+      {
+        "name": "Results",
+        "url": "/result"
+      },
+      {
+        "name": "Settings",
+        "url": "/result"
+      }
+    ],
+    "help": true,
+    "invitePeople": true
+  },
+  "settings": {
+    "notifications": true,
+    "account": true,
+    "privacy": true
+  }
+}
